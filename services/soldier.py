@@ -1,5 +1,4 @@
-from dal import  insert_soldier
-
+from dal import insert_dic
 
 class Soldier:
     def __init__(self , first_name , last_name , phone_number , rank, id = None):
@@ -9,9 +8,10 @@ class Soldier:
         self.phone_number = phone_number
         self.rank = rank
 
-    def insert_soldier_to_db(self):
-        soldier = {"first_name": self.first_name, "last_name": self.last_name, "phone_number": self.phone_number, "rank": self.rank}
-        insert_soldier(soldier)
+    def insert_soldier(self):
+        sol = {"first_name": self.first_name, "last_name": self.last_name, "phone_number": self.phone_number, "rank": self.rank}
+        return insert_dic(sol)
+
 
 
 

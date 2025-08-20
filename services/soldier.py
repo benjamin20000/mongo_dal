@@ -1,4 +1,4 @@
-from dal import insert_dic
+from dal import DAl
 
 
 class Soldier:
@@ -11,9 +11,11 @@ class Soldier:
 
     def insert_soldier_to_db(self):
         soldier = {"first_name": self.first_name, "last_name": self.last_name, "phone_number": self.phone_number, "rank": self.rank}
-        return insert_dic(soldier)
+        dal = DAl()
+        return dal.insert_dic(soldier)
 
 
 
-
+s = Soldier("nahum" , "bemi" , 123 , 1)
+print(s.insert_soldier_to_db())
 

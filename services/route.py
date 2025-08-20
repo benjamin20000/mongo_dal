@@ -1,8 +1,8 @@
 from bson import ObjectId
 from fastapi import FastAPI, HTTPException
-from services.dal import get_all, get_soldier_by_id
+from dal import get_all, get_soldier_by_id
 from services.dal import delete_by_id
-from services.soldier import Soldier
+from soldier import Soldier
 
 app = FastAPI()
 

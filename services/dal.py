@@ -14,3 +14,4 @@ def insert_soldier(soldier):
     ##insert the first soldier
     mycol.insert_one(soldier)
 
+init_db_and_collection()

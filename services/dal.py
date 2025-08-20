@@ -17,5 +17,3 @@ def get_all():
     for sol in mycol.find({},{"_id":0}):
         res.append(sol)
     return res
-
-init_db_and_collection()

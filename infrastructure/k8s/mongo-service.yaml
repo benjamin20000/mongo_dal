@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodb
-  namespace: nahum0583-dev
+  name: mongo-service
+  namespace: benny3644-dev
 spec:
   selector:
-    app: mongodb
+    app: mongo
   ports:
     - protocol: TCP
       port: 27017

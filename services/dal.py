@@ -18,3 +18,4 @@ def get_all():
         res.append(sol)
     return res
 
+init_db_and_collection()

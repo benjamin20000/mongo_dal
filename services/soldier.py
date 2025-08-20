@@ -16,6 +16,5 @@ class Soldier:
 
 
 
-s = Soldier("nahum" , "bemi" , 123 , 1)
-print(s.insert_soldier_to_db())
+
 

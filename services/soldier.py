@@ -1,4 +1,4 @@
-from dal import insert_dic
+from services.dal import insert_dic
 
 
 class Soldier:

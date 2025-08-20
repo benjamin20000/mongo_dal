@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from soldier import Soldier
 from dal import get_all
 
-
 app = FastAPI()
 
 @app.get("/")

@@ -75,6 +75,7 @@ def update_soldier(id: str, first_name: str = None, last_name: str = None, phone
 
     modified_count = dal.update_soldier_by_id(object_id, update_fields)
 
+
     if modified_count == 0:
         raise HTTPException(status_code=404, detail="Soldier not found or no changes applied")
 

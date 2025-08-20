@@ -11,7 +11,7 @@ class Soldier:
 
     def insert_soldier_to_db(self):
         soldier = {"first_name": self.first_name, "last_name": self.last_name, "phone_number": self.phone_number, "rank": self.rank}
-        insert_dic(soldier)
+        return insert_dic(soldier)
 
 
 
